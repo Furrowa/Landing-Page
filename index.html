@@ -1,845 +1,1182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oriva – Smart Irrigation, Made Simple</title>
-<<<<<<< HEAD
- // this 
-=======
- // this is a test comment  
->>>>>>> 9e2a55a958cff05722b24793084d2c90e42c380b
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  :root {
-    --green-deep: #1a3d2b;
-    --green-mid: #2d6a4f;
-    --green-fresh: #52b788;
-    --green-light: #95d5b2;
-    --green-pale: #d8f3dc;
-    --earth: #8b5e3c;
-    --earth-light: #c9a87c;
-    --cream: #faf7f2;
-    --white: #ffffff;
-    --text-dark: #141c15;
-    --text-mid: #3d5a45;
-    --text-light: #6b8f72;
-  }
+  <!-- ═══════════════════════════════════════════
+       PRIMARY SEO META TAGS
+  ═══════════════════════════════════════════ -->
+  <title>Furrowa | Affordable Agritech Devices for Indian Farmers</title>
+  <meta name="description" content="Furrowa makes precision agritech affordable for every Indian farmer. Soil sensors, smart irrigation, crop monitors & weather stations starting at ₹1,299. Serving 18,000+ farmers across 12 states.">
+  <meta name="keywords" content="agritech India, affordable farm sensors, soil moisture sensor India, smart irrigation India, precision farming devices, farm IoT India, krishi technology, kisan tech, crop monitoring device, farming technology India, SoilSense, AquaFlow, Furrowa">
+  <meta name="author" content="Furrowa Agritech Pvt. Ltd.">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <link rel="canonical" href="https://www.furrowa.in/">
 
-  html { scroll-behavior: smooth; }
+  <!-- ═══════════════════════════════════════════
+       OPEN GRAPH (Facebook, WhatsApp, LinkedIn)
+  ═══════════════════════════════════════════ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.furrowa.in/">
+  <meta property="og:title" content="Furrowa — Smart Farming, Honest Prices">
+  <meta property="og:description" content="Precision agritech devices built for Indian farmers. Soil sensors, smart irrigation & crop monitors starting at ₹1,299. 18,000+ farmers. 12 states.">
+  <meta property="og:image" content="https://www.furrowa.in/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Furrowa agritech device in a field with farmer holding a phone showing real-time crop data">
+  <meta property="og:site_name" content="Furrowa Agritech">
+  <meta property="og:locale" content="en_IN">
 
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--cream);
-    color: var(--text-dark);
-    overflow-x: hidden;
-  }
+  <!-- ═══════════════════════════════════════════
+       TWITTER / X CARD
+  ═══════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@furrowaagri">
+  <meta name="twitter:creator" content="@furrowaagri">
+  <meta name="twitter:title" content="Furrowa — Smart Farming, Honest Prices">
+  <meta name="twitter:description" content="Precision agritech for every Indian farmer. Soil sensors, smart irrigation & crop monitors from ₹1,299. 18,000+ farmers trust Furrowa.">
+  <meta name="twitter:image" content="https://www.furrowa.in/assets/twitter-card.jpg">
+  <meta name="twitter:image:alt" content="Furrowa agritech soil sensor in a wheat field">
 
-  /* ── NAV ─────────────────────────────────── */
-  nav {
-    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-    display: flex; align-items: center; justify-content: space-between;
-    padding: 1.2rem 6vw;
-    background: rgba(250,247,242,0.88);
-    backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(82,183,136,0.15);
-  }
-  .logo {
-    font-family: 'Fraunces', serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--green-deep);
-    letter-spacing: -0.02em;
-  }
-  .logo span { color: var(--green-fresh); }
-  .nav-links { display: flex; gap: 2.4rem; list-style: none; }
-  .nav-links a {
-    text-decoration: none;
-    font-size: 0.88rem;
-    font-weight: 500;
-    color: var(--text-mid);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-  .nav-links a:hover { color: var(--green-fresh); }
-  .nav-cta {
-    background: var(--green-deep);
-    color: var(--white) !important;
-    padding: 0.55rem 1.4rem;
-    border-radius: 100px;
-    transition: background 0.2s !important;
-  }
-  .nav-cta:hover { background: var(--green-mid) !important; }
+  <!-- ═══════════════════════════════════════════
+       GEO / REGIONAL META
+  ═══════════════════════════════════════════ -->
+  <meta name="geo.region" content="IN">
+  <meta name="geo.country" content="India">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="rating" content="general">
 
-  /* ── HERO ─────────────────────────────────── */
-  .hero {
-    min-height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 7rem 6vw 4rem;
-    gap: 4rem;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: '';
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(ellipse 60% 70% at 75% 50%, rgba(82,183,136,0.12) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 50% at 10% 80%, rgba(139,94,60,0.07) 0%, transparent 60%);
-    pointer-events: none;
-  }
+  <!-- ═══════════════════════════════════════════
+       FAVICON & ICONS
+  ═══════════════════════════════════════════ -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232D5A27'/><text y='24' x='4' font-size='22'>🌱</text></svg>">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#2D5A27">
+  <meta name="msapplication-TileColor" content="#2D5A27">
 
-  .hero-text { position: relative; z-index: 1; }
-  .hero-eyebrow {
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    background: var(--green-pale);
-    color: var(--green-mid);
-    font-size: 0.78rem;
-    font-weight: 500;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.4rem 1rem;
-    border-radius: 100px;
-    margin-bottom: 1.8rem;
-    animation: fadeUp 0.6s ease both;
-  }
-  .hero-eyebrow::before { content: '●'; font-size: 0.5rem; animation: pulse 2s infinite; }
-  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  <!-- ═══════════════════════════════════════════
+       PRECONNECTS & PERFORMANCE
+  ═══════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap">
 
-  .hero h1 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(2.8rem, 5vw, 4.4rem);
-    font-weight: 700;
-    line-height: 1.1;
-    color: var(--green-deep);
-    letter-spacing: -0.03em;
-    margin-bottom: 1.5rem;
-    animation: fadeUp 0.6s 0.1s ease both;
-  }
-  .hero h1 em {
-    font-style: italic;
-    color: var(--green-fresh);
-    font-weight: 300;
-  }
-  .hero p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: var(--text-mid);
-    max-width: 480px;
-    margin-bottom: 2.4rem;
-    animation: fadeUp 0.6s 0.2s ease both;
-  }
-  .hero-buttons {
-    display: flex; gap: 1rem; flex-wrap: wrap;
-    animation: fadeUp 0.6s 0.3s ease both;
-  }
-  .btn-primary {
-    background: var(--green-deep);
-    color: var(--white);
-    border: none;
-    padding: 0.9rem 2rem;
-    border-radius: 100px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
-    box-shadow: 0 4px 20px rgba(26,61,43,0.25);
-  }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(26,61,43,0.3); background: var(--green-mid); }
-  .btn-secondary {
-    background: transparent;
-    color: var(--green-deep);
-    border: 1.5px solid var(--green-light);
-    padding: 0.9rem 2rem;
-    border-radius: 100px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    transition: all 0.2s;
-  }
-  .btn-secondary:hover { background: var(--green-pale); border-color: var(--green-fresh); }
+  <!-- ═══════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD
+  ═══════════════════════════════════════════ -->
 
-  /* ── HERO VISUAL ─────────────────────────── */
-  .hero-visual {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: fadeUp 0.8s 0.15s ease both;
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Furrowa Agritech Pvt. Ltd.",
+    "alternateName": "Furrowa",
+    "url": "https://www.furrowa.in",
+    "logo": "https://www.furrowa.in/assets/logo.png",
+    "description": "Furrowa builds affordable precision agritech devices for Indian farmers — soil sensors, smart irrigation controllers, crop monitors and weather stations.",
+    "foundingDate": "2021",
+    "foundingLocation": {
+      "@type": "Place",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-800-FURROWA",
+      "contactType": "customer support",
+      "areaServed": "IN",
+      "availableLanguage": ["English","Hindi","Marathi","Tamil","Telugu","Kannada","Bengali","Gujarati","Punjabi","Odia","Malayalam","Assamese"]
+    },
+    "sameAs": [
+      "https://twitter.com/furrowaagri",
+      "https://www.facebook.com/furrowaagri",
+      "https://www.linkedin.com/company/furrowa",
+      "https://www.instagram.com/furrowaagri"
+    ]
   }
-  .device-card {
-    background: var(--white);
-    border-radius: 28px;
-    padding: 2.5rem 2rem;
-    width: 320px;
-    box-shadow: 0 30px 80px rgba(26,61,43,0.15), 0 0 0 1px rgba(82,183,136,0.12);
-    position: relative;
-    overflow: hidden;
-  }
-  .device-card::before {
-    content: '';
-    position: absolute; top: 0; left: 0; right: 0; height: 4px;
-    background: linear-gradient(90deg, var(--green-fresh), var(--green-light), var(--earth-light));
-  }
-  .device-icon {
-    width: 60px; height: 60px;
-    background: var(--green-pale);
-    border-radius: 16px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.8rem;
-    margin-bottom: 1.2rem;
-  }
-  .device-card h3 {
-    font-family: 'Fraunces', serif;
-    font-size: 1rem;
-    color: var(--green-deep);
-    margin-bottom: 0.4rem;
-  }
-  .device-card p { font-size: 0.82rem; color: var(--text-light); margin-bottom: 1.4rem; }
-  .soil-bar-wrap { margin-bottom: 0.5rem; }
-  .soil-bar-label { display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-mid); margin-bottom: 0.3rem; }
-  .soil-bar { height: 6px; background: var(--green-pale); border-radius: 100px; overflow: hidden; }
-  .soil-bar-fill { height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--green-mid), var(--green-fresh)); animation: fillBar 1.5s ease both; }
-  @keyframes fillBar { from { width: 0 !important; } }
-  .status-badge {
-    margin-top: 1.5rem;
-    background: #e8f5e9;
-    border: 1px solid #a5d6a7;
-    color: #2e7d32;
-    padding: 0.7rem 1rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    display: flex; align-items: center; gap: 0.5rem;
-  }
-  .status-badge .dot { width: 8px; height: 8px; background: #4caf50; border-radius: 50%; animation: pulse 2s infinite; }
-  .floating-tag {
-    position: absolute;
-    background: var(--white);
-    border-radius: 12px;
-    padding: 0.6rem 1rem;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    font-size: 0.78rem;
-    font-weight: 500;
-    color: var(--green-deep);
-    display: flex; align-items: center; gap: 0.4rem;
-  }
-  .tag1 { top: -20px; right: -40px; animation: float 4s ease-in-out infinite; }
-  .tag2 { bottom: 30px; left: -50px; animation: float 4s 2s ease-in-out infinite; }
-  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+  </script>
 
-  /* ── SECTION COMMON ───────────────────────── */
-  section { padding: 7rem 6vw; }
-  .section-label {
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--green-fresh);
-    margin-bottom: 1rem;
+  <!-- WebSite Schema (enables Sitelinks Searchbox) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.furrowa.in/",
+    "name": "Furrowa Agritech",
+    "description": "Affordable agritech devices for Indian farmers",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.furrowa.in/search?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   }
-  .section-title {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    font-weight: 700;
-    color: var(--green-deep);
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    margin-bottom: 1.2rem;
-  }
-  .section-sub {
-    font-size: 1rem;
-    color: var(--text-mid);
-    line-height: 1.7;
-    max-width: 560px;
-  }
+  </script>
 
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to   { opacity: 1; transform: translateY(0); }
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.furrowa.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Devices",
+        "item": "https://www.furrowa.in/devices"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Pricing",
+        "item": "https://www.furrowa.in/pricing"
+      }
+    ]
   }
+  </script>
 
-  /* ── PROBLEM ──────────────────────────────── */
-  .problem {
-    background: var(--green-deep);
-    color: var(--white);
-    border-radius: 32px;
-    margin: 0 3vw;
-    padding: 6rem 6vw;
+  <!-- Product Schema — SoilSense Pro -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Furrowa SoilSense Pro",
+    "description": "Real-time soil moisture, temperature, and NPK readings sent to your phone. Solar-powered with 6-month battery backup. Designed for Indian field conditions.",
+    "brand": {
+      "@type": "Brand",
+      "name": "Furrowa"
+    },
+    "image": "https://www.furrowa.in/assets/soilsense-pro.jpg",
+    "sku": "FRW-SSP-001",
+    "mpn": "SSP001",
+    "category": "Agricultural Sensors",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "price": "1299",
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.furrowa.in/devices/soilsense-pro",
+      "seller": {
+        "@type": "Organization",
+        "name": "Furrowa Agritech Pvt. Ltd."
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "2340",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
   }
-  .problem .section-label { color: var(--green-light); }
-  .problem .section-title { color: var(--white); }
-  .problem .section-sub { color: rgba(255,255,255,0.65); }
-  .problem-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    margin-top: 3.5rem;
-  }
-  .problem-card {
-    background: rgba(255,255,255,0.07);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: 20px;
-    padding: 1.8rem;
-    transition: background 0.2s, transform 0.2s;
-  }
-  .problem-card:hover { background: rgba(255,255,255,0.11); transform: translateY(-4px); }
-  .problem-card .icon { font-size: 2rem; margin-bottom: 1rem; }
-  .problem-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--green-light); }
-  .problem-card p { font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.6; }
-  .problem-footer {
-    margin-top: 3rem;
-    padding: 1.4rem 2rem;
-    background: rgba(255,255,255,0.07);
-    border-left: 3px solid var(--green-fresh);
-    border-radius: 0 12px 12px 0;
-    font-size: 1rem;
-    color: rgba(255,255,255,0.8);
-    font-style: italic;
-  }
+  </script>
 
-  /* ── HOW IT WORKS ─────────────────────────── */
-  .how { background: var(--cream); }
-  .how-inner { max-width: 900px; margin: 0 auto; }
-  .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin-top: 4rem;
-    position: relative;
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do Furrowa devices need a SIM card or internet connection?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Furrowa devices use LoRaWAN technology which doesn't require a SIM card. They transmit data up to 5 km to any Furrowa gateway. The gateway connects to the internet via a basic broadband or mobile connection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How affordable are Furrowa agritech devices?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Furrowa devices start at ₹1,299 for the SoilSense Pro soil sensor — a one-time purchase. The Furrowa app is free forever. The optional Kisan Plus analytics plan is ₹199/month, and FPO group plans start at ₹99 per farmer per month."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "In which languages does the Furrowa app work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Furrowa app supports Hindi, English, Marathi, Tamil, Telugu, Kannada, Bengali, Gujarati, Punjabi, Odia, Malayalam, and Assamese — 12 languages in total. Alerts are sent via app notifications and WhatsApp."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which states does Furrowa serve?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Furrowa currently serves farmers across 12 Indian states including Maharashtra, Haryana, Punjab, Tamil Nadu, Andhra Pradesh, Telangana, Karnataka, Madhya Pradesh, Uttar Pradesh, Rajasthan, Gujarat, and West Bengal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much can Furrowa increase my crop yield?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Furrowa farmers report an average 31% increase in yield in their first growing cycle. Water use typically drops by 30–40% through optimised irrigation scheduling."
+        }
+      }
+    ]
   }
-  .steps::before {
-    content: '';
-    position: absolute;
-    left: 28px; top: 28px; bottom: 28px;
-    width: 2px;
-    background: linear-gradient(180deg, var(--green-fresh), var(--green-light), transparent);
-  }
-  .step {
-    display: flex; gap: 2rem;
-    padding: 1.5rem 0;
-    align-items: flex-start;
-    transition: transform 0.2s;
-  }
-  .step:hover { transform: translateX(6px); }
-  .step-num {
-    flex-shrink: 0;
-    width: 56px; height: 56px;
-    background: var(--white);
-    border: 2px solid var(--green-light);
-    border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Fraunces', serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--green-deep);
-    box-shadow: 0 4px 16px rgba(82,183,136,0.2);
-    position: relative; z-index: 1;
-    transition: background 0.2s, border-color 0.2s;
-  }
-  .step:hover .step-num { background: var(--green-fresh); border-color: var(--green-fresh); color: var(--white); }
-  .step-body { padding-top: 0.6rem; }
-  .step-body h4 {
-    font-family: 'Fraunces', serif;
-    font-size: 1.15rem;
-    color: var(--green-deep);
-    margin-bottom: 0.4rem;
-  }
-  .step-body p { font-size: 0.92rem; color: var(--text-mid); line-height: 1.6; }
-  .step-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.7rem; }
-  .step-tag {
-    background: var(--green-pale);
-    color: var(--green-mid);
-    font-size: 0.75rem;
-    padding: 0.25rem 0.75rem;
-    border-radius: 100px;
-    font-weight: 500;
-  }
+  </script>
 
-  /* ── COMPARISON ───────────────────────────── */
-  .compare { background: var(--white); }
-  .compare-table {
-    margin-top: 3.5rem;
-    width: 100%;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 8px 40px rgba(26,61,43,0.08);
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Furrowa Agritech Pvt. Ltd.",
+    "image": "https://www.furrowa.in/assets/og-image.jpg",
+    "url": "https://www.furrowa.in",
+    "telephone": "+91-800-FURROWA",
+    "email": "hello@furrowa.in",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Level 4, AgriHub, Baner Road",
+      "addressLocality": "Pune",
+      "addressRegion": "Maharashtra",
+      "postalCode": "411045",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 18.5590,
+      "longitude": 73.7868
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "priceRange": "₹₹"
   }
-  .compare-table table { width: 100%; border-collapse: collapse; }
-  .compare-table th {
-    padding: 1.2rem 1.8rem;
-    text-align: left;
-    font-size: 0.82rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-  .compare-table th:first-child { background: #f5f5f5; color: #888; }
-  .compare-table th:last-child { background: var(--green-deep); color: var(--white); }
-  .compare-table td {
-    padding: 1rem 1.8rem;
-    font-size: 0.95rem;
-    border-top: 1px solid #f0f0f0;
-  }
-  .compare-table td:first-child { background: var(--white); color: var(--text-mid); }
-  .compare-table td:last-child { background: #f0faf4; color: var(--green-deep); font-weight: 500; }
-  .compare-table tr:hover td:last-child { background: var(--green-pale); }
+  </script>
 
-  /* ── BENEFITS ─────────────────────────────── */
-  .benefits { background: var(--cream); }
-  .benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-top: 3.5rem;
-  }
-  .benefit-card {
-    background: var(--white);
-    border-radius: 20px;
-    padding: 2rem 1.6rem;
-    border: 1px solid rgba(82,183,136,0.15);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  .benefit-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(26,61,43,0.1); }
-  .benefit-icon { font-size: 2.2rem; margin-bottom: 1rem; }
-  .benefit-card h4 { font-family: 'Fraunces', serif; font-size: 1.05rem; color: var(--green-deep); margin-bottom: 0.4rem; }
-  .benefit-card p { font-size: 0.85rem; color: var(--text-light); line-height: 1.6; }
+  <!-- ═══════════════════════════════════════════
+       STYLES
+  ═══════════════════════════════════════════ -->
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --soil: #2C1810;
+      --earth: #6B3D2A;
+      --harvest: #C8841A;
+      --harvest-light: #F5C842;
+      --leaf: #2D5A27;
+      --leaf-light: #4A8C3F;
+      --sky: #E8F4EC;
+      --cream: #FBF7F0;
+      --text-dark: #1A1A1A;
+      --text-mid: #4A4A4A;
+      --text-muted: #888;
+    }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-dark); overflow-x: hidden; line-height: 1.6; }
 
-  /* ── SCIENCE ──────────────────────────────── */
-  .science {
-    background: linear-gradient(135deg, #f0faf4 0%, var(--cream) 100%);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-    align-items: center;
-  }
-  .science-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
-  .sci-item {
-    display: flex; align-items: flex-start; gap: 1rem;
-    padding: 1rem;
-    background: var(--white);
-    border-radius: 14px;
-    border-left: 3px solid var(--green-fresh);
-    box-shadow: 0 2px 12px rgba(26,61,43,0.06);
-  }
-  .sci-icon { font-size: 1.4rem; }
-  .sci-item h5 { font-family: 'Fraunces', serif; font-size: 0.95rem; color: var(--green-deep); margin-bottom: 0.2rem; }
-  .sci-item p { font-size: 0.82rem; color: var(--text-light); }
-  .science-quote {
-    background: var(--green-deep);
-    color: var(--white);
-    border-radius: 24px;
-    padding: 3rem;
-    position: relative;
-  }
-  .science-quote::before {
-    content: '"';
-    font-family: 'Fraunces', serif;
-    font-size: 8rem;
-    position: absolute;
-    top: -1rem; left: 1.5rem;
-    color: rgba(82,183,136,0.25);
-    line-height: 1;
-  }
-  .science-quote p {
-    font-family: 'Fraunces', serif;
-    font-size: 1.5rem;
-    font-style: italic;
-    line-height: 1.5;
-    color: var(--white);
-    margin-bottom: 1.5rem;
-  }
-  .science-quote .credit { font-size: 0.82rem; color: var(--green-light); }
-  .output-pills { display: flex; flex-direction: column; gap: 0.8rem; margin-top: 2rem; }
-  .pill {
-    display: flex; align-items: center; gap: 0.8rem;
-    padding: 0.8rem 1.2rem;
-    border-radius: 12px;
-    font-size: 0.9rem;
-    font-weight: 500;
-  }
-  .pill-green { background: rgba(76,175,80,0.15); color: #4caf50; }
-  .pill-yellow { background: rgba(255,193,7,0.15); color: #f59e0b; }
-  .pill-red { background: rgba(244,67,54,0.15); color: #ef5350; }
+    /* SKIP LINK (accessibility + SEO) */
+    .skip-link {
+      position: absolute; top: -40px; left: 0;
+      background: var(--leaf); color: white; padding: 8px 16px;
+      z-index: 999; text-decoration: none; font-size: 0.9rem;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; }
 
-  /* ── FUTURE ───────────────────────────────── */
-  .future { background: var(--white); }
-  .future-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.2rem; margin-top: 3rem; }
-  .future-item {
-    background: var(--cream);
-    border-radius: 16px;
-    padding: 1.4rem;
-    border: 1px solid rgba(82,183,136,0.12);
-    display: flex; align-items: center; gap: 0.8rem;
-    font-size: 0.9rem;
-    color: var(--text-mid);
-    font-weight: 400;
-    transition: background 0.2s;
-  }
-  .future-item:hover { background: var(--green-pale); }
-  .future-item span:first-child { font-size: 1.3rem; }
+    /* NAV */
+    header[role="banner"] {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(251,247,240,0.93);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(107,61,42,0.1);
+    }
+    nav[aria-label="Main navigation"] {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 5%;
+      max-width: 1280px; margin: 0 auto;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem; font-weight: 900;
+      color: var(--leaf); letter-spacing: -0.5px;
+      text-decoration: none;
+    }
+    .nav-logo span { color: var(--harvest); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      text-decoration: none; font-size: 0.9rem;
+      color: var(--text-mid); font-weight: 500;
+      transition: color 0.2s; padding: 4px 0;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-links a:hover, .nav-links a:focus { color: var(--leaf); border-bottom-color: var(--leaf); outline: none; }
+    .nav-cta {
+      background: var(--leaf); color: white;
+      padding: 0.6rem 1.5rem; border-radius: 50px;
+      font-size: 0.9rem; font-weight: 500; text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .nav-cta:hover, .nav-cta:focus { background: var(--leaf-light); transform: translateY(-1px); outline: 2px solid var(--harvest); outline-offset: 2px; }
 
-  /* ── CTA ──────────────────────────────────── */
-  .cta-section {
-    background: var(--green-deep);
-    border-radius: 32px;
-    margin: 0 3vw 4rem;
-    padding: 6rem 6vw;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-  .cta-section::before {
-    content: '';
-    position: absolute; inset: 0;
-    background: radial-gradient(ellipse 70% 80% at 50% 120%, rgba(82,183,136,0.25) 0%, transparent 60%);
-    pointer-events: none;
-  }
-  .cta-section .section-label { color: var(--green-light); text-align: center; }
-  .cta-section h2 {
-    font-family: 'Fraunces', serif;
-    font-size: clamp(2.2rem, 4vw, 3.4rem);
-    color: var(--white);
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    margin-bottom: 1rem;
-  }
-  .cta-section p { color: rgba(255,255,255,0.65); font-size: 1rem; max-width: 480px; margin: 0 auto 2.5rem; line-height: 1.7; }
-  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-  .btn-primary-inv {
-    background: var(--white);
-    color: var(--green-deep);
-    border: none;
-    padding: 0.9rem 2rem;
-    border-radius: 100px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    transition: transform 0.2s, box-shadow 0.2s;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  }
-  .btn-primary-inv:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.25); }
-  .btn-outline-inv {
-    background: transparent;
-    color: var(--white);
-    border: 1.5px solid rgba(255,255,255,0.35);
-    padding: 0.9rem 2rem;
-    border-radius: 100px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-flex; align-items: center; gap: 0.5rem;
-    transition: all 0.2s;
-  }
-  .btn-outline-inv:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.6); }
+    /* HERO */
+    .hero {
+      min-height: 100vh; display: flex; flex-direction: column;
+      justify-content: center; padding: 8rem 5% 5rem;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      background: linear-gradient(155deg, #E8F4EC 0%, #FBF7F0 55%, #FDF3E0 100%);
+    }
+    .hero-wave {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 180px; opacity: 0.5;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='50' viewBox='0 0 100 50'%3E%3Cpath d='M0 50 Q50 0 100 50' fill='none' stroke='%232D5A2720' stroke-width='1.5'/%3E%3C/svg%3E") repeat-x bottom;
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 700px; animation: fadeUp 0.7s ease both; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: white; border: 1px solid rgba(45,90,39,0.2);
+      padding: 0.4rem 1rem; border-radius: 50px;
+      font-size: 0.78rem; color: var(--leaf); font-weight: 500;
+      margin-bottom: 1.8rem; letter-spacing: 0.3px;
+    }
+    .badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--leaf-light); animation: pulse 2s infinite; flex-shrink: 0; }
+    @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:0.4; transform:scale(0.8); } }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.6rem, 5vw, 4.2rem); font-weight: 900;
+      line-height: 1.1; color: var(--soil); margin-bottom: 1.4rem;
+    }
+    .hero h1 em { font-style: normal; color: var(--leaf); }
+    .hero h1 .accent { color: var(--harvest); }
+    .hero-sub {
+      font-size: 1.1rem; color: var(--text-mid); line-height: 1.75;
+      max-width: 540px; margin-bottom: 2.5rem;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--leaf); color: white;
+      padding: 0.9rem 2rem; border-radius: 50px;
+      font-weight: 500; text-decoration: none; font-size: 1rem;
+      transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+      border: 2px solid var(--leaf);
+    }
+    .btn-primary:hover, .btn-primary:focus { background: var(--leaf-light); border-color: var(--leaf-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(45,90,39,0.25); outline: none; }
+    .btn-secondary {
+      background: transparent; color: var(--leaf);
+      padding: 0.9rem 2rem; border-radius: 50px;
+      font-weight: 500; text-decoration: none; font-size: 1rem;
+      border: 2px solid var(--leaf);
+      transition: all 0.2s; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-secondary:hover, .btn-secondary:focus { background: var(--leaf); color: white; outline: none; }
 
-  /* ── FOOTER ───────────────────────────────── */
-  footer {
-    padding: 2.5rem 6vw;
-    display: flex; align-items: center; justify-content: space-between;
-    flex-wrap: wrap; gap: 1rem;
-    border-top: 1px solid rgba(82,183,136,0.15);
-  }
-  footer .logo { font-size: 1.2rem; }
-  footer p { font-size: 0.82rem; color: var(--text-light); }
+    /* TRUST BAR */
+    .trust-bar {
+      background: white; padding: 1.2rem 5%;
+      border-top: 1px solid rgba(107,61,42,0.08);
+      border-bottom: 1px solid rgba(107,61,42,0.08);
+    }
+    .trust-inner {
+      max-width: 1280px; margin: 0 auto;
+      display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
+      justify-content: center;
+    }
+    .trust-item { display: flex; align-items: center; gap: 8px; font-size: 0.82rem; color: var(--text-mid); }
+    .trust-icon { font-size: 1rem; }
 
-  /* ── RESPONSIVE ───────────────────────────── */
-  @media (max-width: 860px) {
-    .hero { grid-template-columns: 1fr; padding-top: 8rem; text-align: center; }
-    .hero p { margin-left: auto; margin-right: auto; }
-    .hero-buttons { justify-content: center; }
-    .hero-visual { display: none; }
-    .science { grid-template-columns: 1fr; gap: 3rem; }
-    nav .nav-links { display: none; }
-    .problem, .cta-section { margin: 0 1.5vw; }
-  }
-</style>
+    /* STATS STRIP */
+    .stats-section { background: var(--soil); }
+    .stats-grid {
+      max-width: 1280px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      padding: 3rem 5%; gap: 1rem;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem; font-weight: 700; color: var(--harvest-light);
+      display: block; line-height: 1.1;
+    }
+    .stat-label { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-top: 5px; }
+
+    /* SECTIONS */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 5%; }
+    section { padding: 6rem 0; }
+    .section-tag {
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--harvest);
+      margin-bottom: 0.8rem; display: block;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.9rem, 3.2vw, 2.7rem); font-weight: 700;
+      color: var(--soil); line-height: 1.2; margin-bottom: 1rem;
+    }
+    .section-sub { font-size: 1.05rem; color: var(--text-mid); line-height: 1.75; max-width: 580px; }
+
+    /* PRODUCTS */
+    #devices { background: white; }
+    .products-header { margin-bottom: 3.5rem; }
+    .products-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .product-card {
+      background: var(--cream); border-radius: 20px;
+      padding: 2rem; border: 1px solid rgba(107,61,42,0.1);
+      transition: all 0.3s; position: relative; overflow: hidden;
+    }
+    .product-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+      background: var(--harvest); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s;
+    }
+    .product-card:hover, .product-card:focus-within {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 40px rgba(45,90,39,0.12);
+    }
+    .product-card:hover::before, .product-card:focus-within::before { transform: scaleX(1); }
+    .product-icon {
+      width: 60px; height: 60px; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; margin-bottom: 1.2rem;
+      background: rgba(45,90,39,0.08);
+      role: img;
+    }
+    .product-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem; font-weight: 700; color: var(--soil); margin-bottom: 0.5rem;
+    }
+    .product-desc { font-size: 0.9rem; color: var(--text-mid); line-height: 1.65; margin-bottom: 1.2rem; }
+    .product-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700; color: var(--leaf);
+      display: flex; align-items: baseline; gap: 6px;
+    }
+    .product-price small { font-family: 'DM Sans',sans-serif; font-size: 0.78rem; color: var(--text-muted); font-weight: 400; }
+    .tag-pill {
+      display: inline-block; background: rgba(200,132,26,0.12);
+      color: var(--earth); font-size: 0.7rem; font-weight: 500;
+      padding: 3px 10px; border-radius: 50px; margin-top: 0.8rem;
+    }
+    .product-link {
+      display: inline-flex; align-items: center; gap: 5px;
+      color: var(--leaf); font-size: 0.85rem; font-weight: 500;
+      text-decoration: none; margin-top: 1rem;
+      border-bottom: 1px solid transparent; transition: border-color 0.2s;
+    }
+    .product-link:hover, .product-link:focus { border-bottom-color: var(--leaf); outline: none; }
+
+    /* HOW IT WORKS */
+    #how-it-works { background: var(--sky); }
+    .how-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 5rem; align-items: center; margin-top: 3rem;
+    }
+    .steps { display: flex; flex-direction: column; gap: 2rem; }
+    .step { display: flex; gap: 1.2rem; align-items: flex-start; }
+    .step-num {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--leaf); color: white;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-body { padding-top: 6px; }
+    .step-title { font-weight: 500; color: var(--soil); margin-bottom: 4px; font-size: 1rem; }
+    .step-desc { font-size: 0.88rem; color: var(--text-mid); line-height: 1.65; }
+    .how-visual {
+      background: white; border-radius: 24px; padding: 1.5rem;
+      border: 1px solid rgba(45,90,39,0.12);
+      box-shadow: 0 12px 40px rgba(45,90,39,0.08);
+    }
+    .device-mockup {
+      background: var(--leaf); border-radius: 16px;
+      padding: 1.5rem; color: white; display: flex; flex-direction: column; gap: 1rem;
+    }
+    .device-header { display: flex; justify-content: space-between; align-items: center; }
+    .device-title { font-size: 0.72rem; opacity: 0.7; letter-spacing: 1px; text-transform: uppercase; }
+    .device-badge { background: rgba(255,255,255,0.2); font-size: 0.7rem; padding: 3px 8px; border-radius: 20px; }
+    .sensor-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+    .sensor-card { background: rgba(255,255,255,0.1); border-radius: 12px; padding: 0.8rem; }
+    .sensor-label { font-size: 0.62rem; opacity: 0.65; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .sensor-val { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; }
+    .sensor-unit { font-size: 0.7rem; opacity: 0.6; margin-left: 2px; font-family: 'DM Sans', sans-serif; }
+    .sensor-bar { height: 4px; background: rgba(255,255,255,0.15); border-radius: 4px; margin-top: 8px; overflow: hidden; }
+    .sensor-fill { height: 100%; background: var(--harvest-light); border-radius: 4px; transition: width 2s ease; }
+    .alert-bar {
+      background: rgba(245,200,66,0.15); border: 1px solid rgba(245,200,66,0.35);
+      border-radius: 10px; padding: 0.65rem 0.8rem;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .alert-dot { width: 8px; height: 8px; background: var(--harvest-light); border-radius: 50%; flex-shrink: 0; }
+    .alert-text { font-size: 0.75rem; opacity: 0.9; }
+
+    /* TESTIMONIALS */
+    #testimonials { background: white; }
+    .testi-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+      gap: 1.5rem; margin-top: 3.5rem;
+    }
+    .testi-card {
+      background: var(--cream); border-radius: 20px; padding: 2rem;
+      border: 1px solid rgba(107,61,42,0.1);
+    }
+    .quote-mark {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem; color: var(--harvest); line-height: 0.5;
+      margin-bottom: 1rem; display: block; opacity: 0.35;
+    }
+    .testi-text {
+      font-size: 0.95rem; color: var(--text-mid); line-height: 1.75;
+      margin-bottom: 1.5rem; font-style: italic;
+    }
+    .testi-author { display: flex; align-items: center; gap: 12px; }
+    .author-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--leaf); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.88rem; flex-shrink: 0;
+      aria-hidden: true;
+    }
+    .author-name { font-weight: 500; color: var(--soil); font-size: 0.9rem; }
+    .author-loc { font-size: 0.78rem; color: var(--text-muted); }
+    .star-rating { color: var(--harvest); font-size: 0.85rem; letter-spacing: 1px; margin-bottom: 0.6rem; }
+
+    /* FAQ */
+    #faq { background: var(--sky); }
+    .faq-grid { margin-top: 3rem; display: flex; flex-direction: column; gap: 1rem; max-width: 800px; }
+    details {
+      background: white; border-radius: 14px;
+      border: 1px solid rgba(107,61,42,0.1); overflow: hidden;
+    }
+    summary {
+      padding: 1.2rem 1.5rem; font-weight: 500; cursor: pointer;
+      font-size: 0.98rem; color: var(--soil); list-style: none;
+      display: flex; justify-content: space-between; align-items: center;
+      transition: background 0.2s;
+    }
+    summary:hover { background: var(--sky); }
+    summary::after { content: '+'; font-size: 1.4rem; color: var(--harvest); font-weight: 300; transition: transform 0.3s; }
+    details[open] summary::after { transform: rotate(45deg); }
+    .faq-answer { padding: 0 1.5rem 1.2rem; font-size: 0.9rem; color: var(--text-mid); line-height: 1.7; }
+
+    /* PRICING */
+    #pricing { background: var(--soil); color: white; }
+    .pricing-header { text-align: center; margin-bottom: 3rem; }
+    .pricing-header .section-title { color: white; }
+    .pricing-header .section-sub { color: rgba(255,255,255,0.62); margin: 0 auto; }
+    .price-cards {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+      gap: 1.2rem; max-width: 860px; margin: 0 auto;
+    }
+    .price-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px; padding: 2rem 1.5rem; transition: all 0.3s;
+    }
+    .price-card:hover { background: rgba(255,255,255,0.1); transform: translateY(-3px); }
+    .price-card.featured { background: var(--harvest); border-color: var(--harvest-light); }
+    .featured-badge {
+      font-size: 0.7rem; background: rgba(255,255,255,0.25);
+      padding: 3px 10px; border-radius: 50px; font-weight: 500;
+      display: inline-block; margin-bottom: 0.8rem;
+    }
+    .price-card-name { font-size: 0.82rem; letter-spacing: 1px; text-transform: uppercase; opacity: 0.7; margin-bottom: 0.8rem; }
+    .price-amount { font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 700; color: var(--harvest-light); margin-bottom: 0.4rem; }
+    .price-card.featured .price-amount { color: white; }
+    .price-period { font-size: 0.78rem; opacity: 0.55; margin-bottom: 1.4rem; }
+    .price-features { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+    .price-features li { font-size: 0.85rem; opacity: 0.8; display: flex; align-items: flex-start; gap: 8px; }
+    .price-features li::before { content: '✓'; color: var(--harvest-light); font-weight: 700; flex-shrink: 0; }
+    .price-card.featured .price-features li::before { color: white; }
+    .price-cta {
+      display: block; text-align: center; margin-top: 1.5rem;
+      background: white; color: var(--soil);
+      padding: 0.7rem 1rem; border-radius: 50px;
+      font-weight: 500; font-size: 0.88rem; text-decoration: none;
+      transition: all 0.2s;
+    }
+    .price-cta:hover, .price-cta:focus { background: var(--cream); transform: translateY(-1px); outline: 2px solid var(--harvest-light); outline-offset: 2px; }
+    .price-card.featured .price-cta { background: var(--soil); color: white; }
+    .price-card.featured .price-cta:hover { background: #1a0e08; }
+
+    /* CTA BANNER */
+    .cta-banner {
+      background: var(--leaf); color: white;
+      padding: 5rem 5%; text-align: center;
+    }
+    .cta-banner h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700;
+      margin-bottom: 1rem; color: white;
+    }
+    .cta-banner p { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto; }
+    .cta-banner .btn-primary { background: var(--harvest); border-color: var(--harvest); color: white; font-size: 1.05rem; }
+    .cta-banner .btn-primary:hover { background: var(--harvest-light); border-color: var(--harvest-light); color: var(--soil); }
+
+    /* FOOTER */
+    footer {
+      background: #170E08; color: rgba(255,255,255,0.5);
+      padding: 4rem 5% 2.5rem;
+    }
+    .footer-grid {
+      max-width: 1280px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem; margin-bottom: 3rem;
+    }
+    .footer-brand .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; color: white; font-weight: 700;
+      text-decoration: none; display: block; margin-bottom: 1rem;
+    }
+    .footer-brand .footer-logo span { color: var(--harvest); }
+    .footer-brand p { font-size: 0.85rem; line-height: 1.7; max-width: 280px; }
+    .footer-col h3 { font-size: 0.8rem; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .footer-col ul a { text-decoration: none; color: rgba(255,255,255,0.5); font-size: 0.85rem; transition: color 0.2s; }
+    .footer-col ul a:hover, .footer-col ul a:focus { color: white; outline: none; }
+    .footer-bottom {
+      max-width: 1280px; margin: 0 auto;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 2rem;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 1rem;
+    }
+    .footer-copy { font-size: 0.8rem; }
+    .footer-legal { display: flex; gap: 1.5rem; }
+    .footer-legal a { color: rgba(255,255,255,0.4); font-size: 0.8rem; text-decoration: none; }
+    .footer-legal a:hover { color: white; }
+    .footer-badges { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
+    .footer-badge {
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px; padding: 4px 10px; font-size: 0.72rem; color: rgba(255,255,255,0.4);
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes growBar { from { width: 0 !important; } }
+    .sensor-fill { animation: growBar 2s 0.5s ease both; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .stats-grid { grid-template-columns: repeat(2,1fr); }
+      .how-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (max-width: 600px) {
+      .stats-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .price-cards { grid-template-columns: 1fr; }
+    }
+
+    /* FOCUS STYLES (accessibility) */
+    :focus-visible { outline: 2px solid var(--harvest); outline-offset: 3px; border-radius: 4px; }
+  </style>
 </head>
+
 <body>
+  <!-- Skip nav for accessibility & SEO -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<!-- NAV -->
-<nav>
-  <div class="logo">Ori<span>va</span></div>
-  <ul class="nav-links">
-    <li><a href="#problem">Problem</a></li>
-    <li><a href="#how">How It Works</a></li>
-    <li><a href="#benefits">Benefits</a></li>
-    <li><a href="#contact" class="nav-cta">Get Started</a></li>
-  </ul>
-</nav>
+  <!-- HEADER -->
+  <header role="banner">
+    <nav aria-label="Main navigation">
+      <a href="/" class="nav-logo" aria-label="Furrowa home">Furrow<span>a</span></a>
+      <ul class="nav-links" role="list">
+        <li><a href="#devices">Devices</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#testimonials">Stories</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+      <a href="#pricing" class="nav-cta" aria-label="Get started with Furrowa">Get Started</a>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <div class="hero-eyebrow">Smart Irrigation Assistant</div>
-    <h1>Know Your Soil.<br><em>Water Smarter.</em><br>Grow Better.</h1>
-    <p>Oriva is a portable smart irrigation assistant that tells farmers exactly when to irrigate and when to wait — using real-time soil data and intelligent predictions.</p>
-    <div class="hero-buttons">
-      <a href="#contact" class="btn-primary">🚀 Get Started</a>
-      <a href="#how" class="btn-secondary">📊 See How It Works</a>
-    </div>
-  </div>
-  <div class="hero-visual">
-    <div class="floating-tag tag1">🌡️ Temp: 28°C</div>
-    <div class="device-card">
-      <div class="device-icon">🌱</div>
-      <h3>Oriva Device</h3>
-      <p>Live soil status — Field A</p>
-      <div class="soil-bar-wrap">
-        <div class="soil-bar-label"><span>Depth 10cm</span><span>72%</span></div>
-        <div class="soil-bar"><div class="soil-bar-fill" style="width:72%"></div></div>
-      </div>
-      <div class="soil-bar-wrap">
-        <div class="soil-bar-label"><span>Depth 25cm</span><span>58%</span></div>
-        <div class="soil-bar"><div class="soil-bar-fill" style="width:58%"></div></div>
-      </div>
-      <div class="soil-bar-wrap">
-        <div class="soil-bar-label"><span>Depth 45cm</span><span>43%</span></div>
-        <div class="soil-bar"><div class="soil-bar-fill" style="width:43%"></div></div>
-      </div>
-      <div class="status-badge">
-        <span class="dot"></span>
-        No irrigation needed today
-      </div>
-    </div>
-    <div class="floating-tag tag2">💧 Next water: 2 days</div>
-  </div>
-</section>
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
 
-<!-- PROBLEM -->
-<section class="problem" id="problem">
-  <div class="section-label">The Challenge</div>
-  <h2 class="section-title">The Hidden Problem<br>in Farming</h2>
-  <p class="section-sub">Most farmers irrigate based on guesswork, routine, or visual signs. This leads to water waste, crop stress, and lost income — all without knowing it.</p>
-  <div class="problem-grid">
-    <div class="problem-card">
-      <div class="icon">💸</div>
-      <h4>Water Wasted</h4>
-      <p>Unnecessary irrigation drains resources and raises costs without any benefit to the crop.</p>
-    </div>
-    <div class="problem-card">
-      <div class="icon">🌾</div>
-      <h4>Crop Stress</h4>
-      <p>Delaying water when crops need it damages yield quality and quantity at harvest.</p>
-    </div>
-    <div class="problem-card">
-      <div class="icon">📍</div>
-      <h4>Uneven Soil</h4>
-      <p>Soil moisture varies across a field — one-point guesses leave patches dry or over-watered.</p>
-    </div>
-    <div class="problem-card">
-      <div class="icon">☁️</div>
-      <h4>Weather Ignored</h4>
-      <p>Daily weather changes affect water loss, but irrigation schedules stay the same.</p>
-    </div>
-  </div>
-  <div class="problem-footer">
-    👉 This leads to lower yield, higher costs, and avoidable water loss — every single season.
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="how" id="how">
-  <div class="how-inner">
-    <div class="section-label">Process</div>
-    <h2 class="section-title">How Oriva Works</h2>
-    <p class="section-sub">Five intelligent steps — from probe to prediction — so you always know exactly what your field needs.</p>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-body">
-          <h4>Insert the Probe</h4>
-          <p>Push Oriva into your soil. It instantly measures moisture levels at multiple depths — getting the full picture, not just the surface.</p>
-          <div class="step-tags"><span class="step-tag">Multi-depth sensing</span><span class="step-tag">Plug & measure</span></div>
+    <!-- HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-wave" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge" role="status" aria-live="polite">
+          <div class="badge-dot" aria-hidden="true"></div>
+          Affordable Technology for Indian Farmers
+        </div>
+        <h1 id="hero-heading">
+          Smart Farming,<br>
+          <em>Honest</em> <span class="accent">Prices.</span>
+        </h1>
+        <p class="hero-sub">
+          Furrowa builds precision agritech devices that give every farmer — not just large estates — access to soil sensors, crop monitors, and smart irrigation starting at <strong>₹1,299</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="#devices" class="btn-primary" aria-label="Explore Furrowa agritech devices">Explore Devices →</a>
+          <a href="#how-it-works" class="btn-secondary" aria-label="Learn how Furrowa works">See How It Works</a>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-body">
-          <h4>Collect Environmental Data</h4>
-          <p>Simultaneously reads surrounding conditions: air temperature, humidity, and light intensity in real time.</p>
-          <div class="step-tags"><span class="step-tag">Temperature</span><span class="step-tag">Humidity</span><span class="step-tag">Light intensity</span></div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar" aria-label="Trust signals">
+      <div class="trust-inner">
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">🏆</span> ICAR Certified Devices</div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">🌐</span> Works Without SIM Card</div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">☀️</span> Solar Powered</div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">🗣️</span> 12 Indian Languages</div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">🔧</span> 2-Year Warranty</div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">🚜</span> PM-KISAN Compatible</div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section aria-label="Key statistics" class="stats-section">
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-num" aria-label="18,000 plus farmers served">18,000+</span>
+          <span class="stat-label">Farmers Served</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" aria-label="Starting price rupees 1299">₹1,299</span>
+          <span class="stat-label">Starting Price</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" aria-label="12 states covered">12</span>
+          <span class="stat-label">States Covered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" aria-label="31 percent average yield increase">31%</span>
+          <span class="stat-label">Avg. Yield Increase</span>
         </div>
       </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-body">
-          <h4>Smart Calculation</h4>
-          <p>Runs the scientifically validated ET₀ evapotranspiration model, adjusted for your specific crop type using the Kc coefficient.</p>
-          <div class="step-tags"><span class="step-tag">ET₀ Model</span><span class="step-tag">Crop factor (Kc)</span></div>
+    </section>
+
+    <!-- PRODUCTS / DEVICES -->
+    <section id="devices" aria-labelledby="devices-heading">
+      <div class="container">
+        <div class="products-header">
+          <span class="section-tag">Our Devices</span>
+          <h2 class="section-title" id="devices-heading">Built for the Field,<br>Priced for Everyone</h2>
+          <p class="section-sub">Rugged, solar-powered, and designed for Indian growing conditions — from dryland wheat to paddy fields.</p>
+        </div>
+        <div class="products-grid" role="list">
+
+          <article class="product-card" role="listitem" aria-label="SoilSense Pro product">
+            <div class="product-icon" role="img" aria-label="Soil sensor icon">🌱</div>
+            <h3 class="product-name">SoilSense Pro</h3>
+            <p class="product-desc">Real-time soil moisture, temperature, and NPK readings sent directly to your phone. Solar-powered with 6-month battery backup.</p>
+            <div class="product-price" aria-label="Price: 1299 rupees, one-time purchase">
+              ₹1,299 <small>one-time</small>
+            </div>
+            <div><span class="tag-pill">Bestseller</span></div>
+            <a href="/devices/soilsense-pro" class="product-link" aria-label="Learn more about SoilSense Pro">Learn more →</a>
+          </article>
+
+          <article class="product-card" role="listitem" aria-label="AquaFlow Valve product">
+            <div class="product-icon" role="img" aria-label="Water irrigation icon">💧</div>
+            <h3 class="product-name">AquaFlow Valve</h3>
+            <p class="product-desc">Smart irrigation controller for 4 zones. Automated schedules based on soil data and local weather. Reduces water use by up to 40%.</p>
+            <div class="product-price" aria-label="Price: 2499 rupees, one-time purchase">
+              ₹2,499 <small>one-time</small>
+            </div>
+            <div><span class="tag-pill">Water Saver</span></div>
+            <a href="/devices/aquaflow-valve" class="product-link" aria-label="Learn more about AquaFlow Valve">Learn more →</a>
+          </article>
+
+          <article class="product-card" role="listitem" aria-label="FarmWeather Station product">
+            <div class="product-icon" role="img" aria-label="Weather station icon">🌤️</div>
+            <h3 class="product-name">FarmWeather Station</h3>
+            <p class="product-desc">Hyperlocal weather station with wind, humidity, rainfall, and UV tracking. 12-day forecast calibrated to your exact field location.</p>
+            <div class="product-price" aria-label="Price: 3799 rupees, one-time purchase">
+              ₹3,799 <small>one-time</small>
+            </div>
+            <div><span class="tag-pill">Field-Grade</span></div>
+            <a href="/devices/farmweather-station" class="product-link" aria-label="Learn more about FarmWeather Station">Learn more →</a>
+          </article>
+
+          <article class="product-card" role="listitem" aria-label="Crop Monitor Kit product">
+            <div class="product-icon" role="img" aria-label="Crop monitoring icon">📊</div>
+            <h3 class="product-name">Crop Monitor Kit</h3>
+            <p class="product-desc">Canopy temperature imaging + NDVI leaf health index every 3 days. Early pest and disease alerts before visible symptoms appear.</p>
+            <div class="product-price" aria-label="Price: 4999 rupees, one-time purchase">
+              ₹4,999 <small>one-time</small>
+            </div>
+            <div><span class="tag-pill">Disease Alert</span></div>
+            <a href="/devices/crop-monitor-kit" class="product-link" aria-label="Learn more about Crop Monitor Kit">Learn more →</a>
+          </article>
+
         </div>
       </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-body">
-          <h4>Prediction Engine</h4>
-          <p>Calculates how fast water will be lost from the soil over the coming days — accounting for weather, crop stage, and current reserves.</p>
-          <div class="step-tags"><span class="step-tag">Water balance tracking</span><span class="step-tag">Depletion forecast</span></div>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">5</div>
-        <div class="step-body">
-          <h4>Clear Decision Output</h4>
-          <p>Oriva gives you a simple, actionable result — no graphs, no guessing, no expertise needed.</p>
-          <div class="output-pills" style="margin-top:0.8rem">
-            <div class="pill pill-green">✅ No irrigation needed today</div>
-            <div class="pill pill-yellow">⏳ Irrigate after 2 days</div>
-            <div class="pill pill-red">⚠️ Water now</div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title" id="how-heading">From Ground to Phone<br>in 3 Simple Steps</h2>
+        <div class="how-grid">
+          <ol class="steps" aria-label="Steps to use Furrowa">
+            <li class="step">
+              <div class="step-num" aria-hidden="true">1</div>
+              <div class="step-body">
+                <h3 class="step-title">Plant the Device</h3>
+                <p class="step-desc">Place the sensor stake into your field. No wiring, no tools needed — solar panel charges within 2 hours of sunlight.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-num" aria-hidden="true">2</div>
+              <div class="step-body">
+                <h3 class="step-title">Data Streams to Your Phone</h3>
+                <p class="step-desc">Readings transmit via LoRaWAN — no SIM needed, works up to 5 km from any Furrowa gateway. View live data on the Furrowa app.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-num" aria-hidden="true">3</div>
+              <div class="step-body">
+                <h3 class="step-title">Act on Smart Recommendations</h3>
+                <p class="step-desc">Furrowa's AI compares your data with local crop models and sends actionable alerts in your language — Hindi, Marathi, Tamil, and 9 more.</p>
+              </div>
+            </li>
+            <li class="step">
+              <div class="step-num" aria-hidden="true">4</div>
+              <div class="step-body">
+                <h3 class="step-title">Watch Your Yield Grow</h3>
+                <p class="step-desc">Track season-over-season improvements. Our farmers report an average 31% yield increase in the first growing cycle.</p>
+              </div>
+            </li>
+          </ol>
+          <div class="how-visual" aria-label="Live Furrowa device dashboard preview" role="img">
+            <div class="device-mockup">
+              <div class="device-header">
+                <span class="device-title">Field Dashboard</span>
+                <span class="device-badge">● Live</span>
+              </div>
+              <div class="sensor-grid">
+                <div class="sensor-card">
+                  <div class="sensor-label">Soil Moisture</div>
+                  <div class="sensor-val">62<span class="sensor-unit">%</span></div>
+                  <div class="sensor-bar"><div class="sensor-fill" style="width:62%"></div></div>
+                </div>
+                <div class="sensor-card">
+                  <div class="sensor-label">Soil Temp</div>
+                  <div class="sensor-val">28<span class="sensor-unit">°C</span></div>
+                  <div class="sensor-bar"><div class="sensor-fill" style="width:56%"></div></div>
+                </div>
+                <div class="sensor-card">
+                  <div class="sensor-label">Nitrogen</div>
+                  <div class="sensor-val">88<span class="sensor-unit">kg/ha</span></div>
+                  <div class="sensor-bar"><div class="sensor-fill" style="width:44%"></div></div>
+                </div>
+                <div class="sensor-card">
+                  <div class="sensor-label">Humidity</div>
+                  <div class="sensor-val">74<span class="sensor-unit">%</span></div>
+                  <div class="sensor-bar"><div class="sensor-fill" style="width:74%"></div></div>
+                </div>
+              </div>
+              <div class="alert-bar">
+                <div class="alert-dot" aria-hidden="true"></div>
+                <span class="alert-text">Irrigation recommended in Zone 2 — soil at 38%</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- COMPARISON -->
-<section class="compare" id="compare">
-  <div class="section-label">Differentiation</div>
-  <h2 class="section-title">Beyond Traditional<br>Soil Sensors</h2>
-  <p class="section-sub">Most sensors tell you what's happening. Oriva tells you what to do — and what's about to happen.</p>
-  <div class="compare-table">
-    <table>
-      <thead>
-        <tr>
-          <th>Traditional Method</th>
-          <th>🌱 Oriva</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Single-point surface reading</td><td>Multi-depth sensing across root zone</td></tr>
-        <tr><td>Only shows current moisture</td><td>Predicts future water need & timing</td></tr>
-        <tr><td>Manual judgment required</td><td>Automatic, clear decision output</td></tr>
-        <tr><td>Static irrigation schedule</td><td>Adaptive, daily-updated recommendations</td></tr>
-        <tr><td>Ignores weather & crop stage</td><td>Integrates ET₀ model + crop factor</td></tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <span class="section-tag">Farmer Stories</span>
+        <h2 class="section-title" id="testimonials-heading">Voices from the Field</h2>
+        <div class="testi-grid">
 
-<!-- BENEFITS -->
-<section class="benefits" id="benefits">
-  <div class="section-label">For Farmers</div>
-  <h2 class="section-title">Built for Real Fields,<br>Real Farmers</h2>
-  <p class="section-sub">Designed to be picked up and used — without training, dashboards, or complicated setup.</p>
-  <div class="benefits-grid">
-    <div class="benefit-card">
-      <div class="benefit-icon">💧</div>
-      <h4>Saves Water</h4>
-      <p>Stop irrigating when soil has enough. Use every drop where it counts.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">🌾</div>
-      <h4>Improves Crop Yield</h4>
-      <p>Precise watering reduces crop stress and supports healthy, consistent growth.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">⏱️</div>
-      <h4>Saves Time</h4>
-      <p>No more walking the entire field to guess. One probe, instant answer.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">📍</div>
-      <h4>Fully Portable</h4>
-      <p>Lightweight and wireless. Use it in any field, any crop, any day.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">📅</div>
-      <h4>Daily or Weekly Use</h4>
-      <p>Works on your schedule — check daily for precision or weekly for planning.</p>
-    </div>
-    <div class="benefit-card">
-      <div class="benefit-icon">🔋</div>
-      <h4>Low Maintenance</h4>
-      <p>No complex installation, no ongoing calibration. Insert and know.</p>
-    </div>
-  </div>
-</section>
+          <article class="testi-card" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="itemReviewed" content="Furrowa SoilSense Pro">
+            <div class="star-rating" aria-label="5 out of 5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="ratingValue" content="5">★★★★★
+            </div>
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote class="testi-text" itemprop="reviewBody">
+              I was wasting water irrigating on a schedule. After SoilSense Pro, I water only when the field needs it. My electricity bill for the pump dropped by half.
+            </blockquote>
+            <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div class="author-avatar" aria-hidden="true">RK</div>
+              <div>
+                <div class="author-name" itemprop="name">Ramesh Kumar</div>
+                <div class="author-loc">Wheat farmer, Haryana</div>
+              </div>
+            </div>
+          </article>
 
-<!-- SCIENCE -->
-<section class="science" id="science">
-  <div>
-    <div class="section-label">Intelligence</div>
-    <h2 class="section-title">Science +<br>Simplicity</h2>
-    <p class="section-sub">Oriva runs sophisticated agricultural science under the hood — so you don't have to.</p>
-    <div class="science-list">
-      <div class="sci-item">
-        <div class="sci-icon">📐</div>
-        <div>
-          <h5>Evapotranspiration Modeling (ET₀)</h5>
-          <p>FAO Penman-Monteith method — the global standard for crop water calculation.</p>
+          <article class="testi-card" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="itemReviewed" content="Furrowa Crop Monitor Kit">
+            <div class="star-rating" aria-label="5 out of 5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="ratingValue" content="5">★★★★★
+            </div>
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote class="testi-text" itemprop="reviewBody">
+              The alerts in Marathi make all the difference. I got a warning about fungal risk 4 days before my neighbor saw symptoms. My paddy crop was fully protected.
+            </blockquote>
+            <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div class="author-avatar" aria-hidden="true">SP</div>
+              <div>
+                <div class="author-name" itemprop="name">Sunita Patil</div>
+                <div class="author-loc">Paddy farmer, Maharashtra</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testi-card" itemscope itemtype="https://schema.org/Review">
+            <meta itemprop="itemReviewed" content="Furrowa Devices">
+            <div class="star-rating" aria-label="5 out of 5 stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+              <meta itemprop="ratingValue" content="5">★★★★★
+            </div>
+            <span class="quote-mark" aria-hidden="true">"</span>
+            <blockquote class="testi-text" itemprop="reviewBody">
+              The kit paid for itself in one season. My cotton yield went from 8 to 11 quintals per acre. I am now buying a second kit for my other field.
+            </blockquote>
+            <div class="testi-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div class="author-avatar" aria-hidden="true">MR</div>
+              <div>
+                <div class="author-name" itemprop="name">Murugan Ramasamy</div>
+                <div class="author-loc">Cotton farmer, Tamil Nadu</div>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
-      <div class="sci-item">
-        <div class="sci-icon">⚖️</div>
-        <div>
-          <h5>Soil Water Balance Tracking</h5>
-          <p>Tracks the complete water budget: what's in the soil, what's lost, what remains.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title" id="faq-heading">Common Questions</h2>
+        <div class="faq-grid">
+          <details>
+            <summary>Do Furrowa devices need a SIM card or internet connection?</summary>
+            <div class="faq-answer">No. Furrowa devices use LoRaWAN technology which doesn't require a SIM card. They transmit data up to 5 km to any Furrowa gateway. The gateway connects to the internet via a basic broadband or mobile connection shared at the village level.</div>
+          </details>
+          <details>
+            <summary>How affordable are the devices? Are there subsidies available?</summary>
+            <div class="faq-answer">Devices start at ₹1,299 (SoilSense Pro) — a one-time purchase. The app is free forever. Many state governments and FPOs offer subsidy schemes. Furrowa is also PM-KISAN compatible, so your Kisan Credit Card can be used for purchase financing.</div>
+          </details>
+          <details>
+            <summary>In which languages does the Furrowa app work?</summary>
+            <div class="faq-answer">The Furrowa app supports 12 Indian languages: Hindi, English, Marathi, Tamil, Telugu, Kannada, Bengali, Gujarati, Punjabi, Odia, Malayalam, and Assamese. Alerts are sent via in-app notifications and WhatsApp in your preferred language.</div>
+          </details>
+          <details>
+            <summary>Which states does Furrowa currently serve?</summary>
+            <div class="faq-answer">Furrowa currently serves farmers across Maharashtra, Haryana, Punjab, Tamil Nadu, Andhra Pradesh, Telangana, Karnataka, Madhya Pradesh, Uttar Pradesh, Rajasthan, Gujarat, and West Bengal — 12 states and growing.</div>
+          </details>
+          <details>
+            <summary>How much can Furrowa realistically increase my crop yield?</summary>
+            <div class="faq-answer">Farmers in our network report an average 31% yield increase in their first full growing cycle. Water use typically drops 30–40% through optimised irrigation. Results vary by crop, region, and current practices, but our team helps you track ROI through the app.</div>
+          </details>
+          <details>
+            <summary>What warranty and after-sales support does Furrowa offer?</summary>
+            <div class="faq-answer">All Furrowa devices come with a 2-year manufacturer warranty. We have 200+ trained field technicians across our 12 states. Kisan Plus subscribers also get access to our agronomist helpline, Monday to Saturday, 9 AM to 6 PM.</div>
+          </details>
         </div>
       </div>
-      <div class="sci-item">
-        <div class="sci-icon">🌡️</div>
-        <div>
-          <h5>Real-Time Environmental Sensing</h5>
-          <p>Temperature, humidity, and light intensity feed into every calculation live.</p>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="pricing-header">
+          <span class="section-tag" style="color: var(--harvest-light);">Pricing</span>
+          <h2 class="section-title" id="pricing-heading">Simple, Honest Plans</h2>
+          <p class="section-sub">Devices are one-time purchases. The app is free. Advanced analytics are optional and genuinely affordable.</p>
+        </div>
+        <div class="price-cards">
+
+          <div class="price-card" aria-label="Basic plan, free forever">
+            <div class="price-card-name">Basic</div>
+            <div class="price-amount">Free</div>
+            <div class="price-period">Forever, no credit card needed</div>
+            <ul class="price-features">
+              <li>Live sensor readings</li>
+              <li>7-day data history</li>
+              <li>Push notifications</li>
+              <li>Hindi &amp; English support</li>
+            </ul>
+            <a href="/signup?plan=basic" class="price-cta">Download Free App</a>
+          </div>
+
+          <div class="price-card featured" aria-label="Kisan Plus plan, 199 rupees per month, most popular">
+            <div><span class="featured-badge">Most Popular</span></div>
+            <div class="price-card-name">Kisan Plus</div>
+            <div class="price-amount">₹199</div>
+            <div class="price-period">per month — cancel anytime</div>
+            <ul class="price-features">
+              <li>90-day data history</li>
+              <li>AI crop recommendations</li>
+              <li>Multi-field management</li>
+              <li>All 12 regional languages</li>
+              <li>WhatsApp alerts</li>
+              <li>Agronomist chat support</li>
+            </ul>
+            <a href="/signup?plan=kisan-plus" class="price-cta">Start Free 30-Day Trial</a>
+          </div>
+
+          <div class="price-card" aria-label="FPO group plan, 99 rupees per farmer per month">
+            <div class="price-card-name">FPO / Group</div>
+            <div class="price-amount">₹99</div>
+            <div class="price-period">per farmer/month (min. 20 farmers)</div>
+            <ul class="price-features">
+              <li>Everything in Kisan Plus</li>
+              <li>Bulk device discounts</li>
+              <li>Dedicated agronomist</li>
+              <li>Village-level reports</li>
+              <li>Government subsidy help</li>
+            </ul>
+            <a href="/contact?plan=fpo" class="price-cta">Talk to Our Team</a>
+          </div>
+
         </div>
       </div>
-    </div>
-  </div>
-  <div class="science-quote">
-    <p>"Not just how much water is in the soil… but how long it will last."</p>
-    <p class="credit">— The Oriva Principle</p>
-    <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.12);">
-      <p style="font-size:0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 0.8rem;">For the farmer, it feels simple:</p>
-      <div style="background: rgba(255,255,255,0.1); border-radius: 14px; padding: 1rem 1.4rem; font-family: 'Fraunces', serif; font-size: 1.3rem; color: var(--green-light); font-style: italic;">
-        "Just insert and know."
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <h2 id="cta-heading">Ready to transform your farm?</h2>
+      <p>Join 18,000+ farmers already growing smarter with Furrowa. Setup takes under 10 minutes.</p>
+      <a href="/shop" class="btn-primary" aria-label="Shop Furrowa agritech devices">Shop Devices →</a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo" aria-label="Furrowa home">Furrow<span>a</span></a>
+        <p>Making precision farming affordable for every Indian farmer. From soil to phone, we've got your field covered.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="/devices/soilsense-pro">SoilSense Pro</a></li>
+          <li><a href="/devices/aquaflow-valve">AquaFlow Valve</a></li>
+          <li><a href="/devices/farmweather-station">FarmWeather Station</a></li>
+          <li><a href="/devices/crop-monitor-kit">Crop Monitor Kit</a></li>
+          <li><a href="/app">Furrowa App</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/blog">Farming Blog</a></li>
+          <li><a href="/careers">Careers</a></li>
+          <li><a href="/press">Press Kit</a></li>
+          <li><a href="/distributors">Become a Distributor</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="/support">Help Centre</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/warranty">Warranty</a></li>
+          <li><a href="/fpo">FPO Programme</a></li>
+          <li><a href="/sitemap.xml">Sitemap</a></li>
+        </ul>
       </div>
     </div>
-  </div>
-</section>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Furrowa Agritech Pvt. Ltd. — CIN: U01234MH2021PTC123456</p>
+      <div class="footer-badges">
+        <span class="footer-badge">ICAR Certified</span>
+        <span class="footer-badge">ISO 9001:2015</span>
+        <span class="footer-badge">Startup India</span>
+      </div>
+      <div class="footer-legal">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/terms">Terms of Use</a>
+        <a href="/cookies">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
 
-<!-- FUTURE -->
-<section class="future" id="future">
-  <div class="section-label">What's Coming</div>
-  <h2 class="section-title">Future Ready</h2>
-  <p class="section-sub">Oriva is built to grow. Upcoming features will connect your device to smarter tools and broader data.</p>
-  <div class="future-grid">
-    <div class="future-item"><span>📱</span><span>Mobile App Integration</span></div>
-    <div class="future-item"><span>🌤️</span><span>Weather Forecast Adjustment</span></div>
-    <div class="future-item"><span>🔊</span><span>Multi-Language Voice Output</span></div>
-    <div class="future-item"><span>📂</span><span>Field Data History Logs</span></div>
-  </div>
-</section>
+  <!-- PERFORMANCE & INTERACTION SCRIPTS -->
+  <script>
+    // Smooth scroll for all internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
 
-<!-- CTA -->
-<div class="cta-section" id="contact">
-  <div class="section-label">Take Action</div>
-  <h2>Stop Guessing.<br>Start Knowing.</h2>
-  <p>With Oriva, every drop of water is used wisely — and every decision is backed by data.</p>
-  <div class="cta-buttons">
-    <a href="#" class="btn-primary-inv">🌱 Try Oriva</a>
-    <a href="#" class="btn-outline-inv">📩 Contact Us</a>
-  </div>
-</div>
+    // Intersection Observer for animate-on-scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.animation = 'fadeUp 0.55s ease both';
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
 
-<!-- FOOTER -->
-<footer>
-  <div class="logo">Ori<span>va</span></div>
-  <p>© 2025 Oriva. Smart Irrigation, Made Simple.</p>
-  <p style="font-size:0.78rem; color: var(--text-light);">Built for farmers. Backed by science.</p>
-</footer>
+    document.querySelectorAll('.product-card, .testi-card, .step, .price-card, details').forEach(el => {
+      el.style.opacity = '0';
+      observer.observe(el);
+    });
+
+    // Animate sensor bars when visible
+    const barObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.sensor-fill').forEach(bar => {
+            const w = bar.style.width;
+            bar.style.width = '0';
+            setTimeout(() => { bar.style.width = w; bar.style.transition = 'width 1.5s ease'; }, 100);
+          });
+          barObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    const deviceMockup = document.querySelector('.device-mockup');
+    if (deviceMockup) barObserver.observe(deviceMockup);
+  </script>
+
+  <!-- Google Analytics placeholder (replace UA with real tag) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
 
 </body>
 </html>

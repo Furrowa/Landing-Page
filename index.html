@@ -1129,6 +1129,635 @@
       margin-bottom: 0.75rem;
       line-height: 1.3;
     }
+
+
+    /* =====================================================
+   HOW IT WORKS — ORIVA MOBILE UI
+===================================================== */
+
+/* SECTION LAYOUT */
+
+.how-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+@media(max-width:968px){
+
+  .how-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+
+}
+
+
+/* =====================================================
+   STEPS
+===================================================== */
+
+.steps{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+.step{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+
+.step-num{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#22c55e,#16a34a);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  flex-shrink:0;
+  box-shadow:0 10px 20px rgba(34,197,94,.22);
+}
+
+.step-title{
+  font-size:1.15rem;
+  font-weight:700;
+  margin-bottom:8px;
+  color:#0f172a;
+}
+
+.step-desc{
+  color:#475569;
+  line-height:1.7;
+  font-size:.97rem;
+}
+
+
+/* =====================================================
+   PHONE CONTAINER
+===================================================== */
+
+.how-visual{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:20px;
+
+  width:fit-content;
+  margin:auto;
+
+  position:relative;
+  overflow:visible;
+}
+
+/* subtle animated glow */
+
+.how-visual::before{
+  content:"";
+  position:absolute;
+
+  width:260px;
+  height:260px;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(34,197,94,.18),
+      transparent 70%
+    );
+
+  filter:blur(35px);
+
+  animation:glowPulse 4s ease-in-out infinite;
+}
+
+
+/* =====================================================
+   MOBILE MOCKUP
+===================================================== */
+
+.mobile-mockup{
+  width:320px;
+
+  background:#111827;
+
+  border-radius:38px;
+
+  padding:18px;
+
+  border:6px solid #1f2937;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.35),
+    0 0 0 1px rgba(255,255,255,.04);
+
+  color:white;
+
+  position:relative;
+
+  overflow:hidden;
+
+  z-index:2;
+
+  animation:floatPhone 5s ease-in-out infinite;
+}
+
+
+/* rotating glow inside */
+
+.mobile-mockup::before{
+  content:"";
+
+  position:absolute;
+
+  inset:-40%;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(34,197,94,.15),
+      transparent 55%
+    );
+
+  animation:rotateGlow 14s linear infinite;
+}
+
+
+/* moving shine */
+
+.mobile-mockup::after{
+  content:"";
+
+  position:absolute;
+
+  top:-120%;
+  left:-40%;
+
+  width:80%;
+  height:300%;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgba(255,255,255,.08),
+      transparent
+    );
+
+  transform:rotate(18deg);
+
+  animation:shineSweep 6s infinite;
+}
+
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.mobile-topbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  font-size:.82rem;
+
+  opacity:.8;
+
+  margin-bottom:18px;
+
+  position:relative;
+  z-index:2;
+}
+
+.mobile-icons{
+  display:flex;
+  gap:8px;
+}
+
+
+/* =====================================================
+   APP HEADER
+===================================================== */
+
+.app-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+
+  margin-bottom:20px;
+
+  position:relative;
+  z-index:2;
+}
+
+.app-brand{
+  font-size:1.35rem;
+  font-weight:800;
+  letter-spacing:.08em;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff,
+      #7dffb1,
+      #ffffff
+    );
+
+  background-size:200% auto;
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  animation:gradientMove 4s linear infinite;
+}
+
+.app-subtitle{
+  font-size:.8rem;
+  opacity:.7;
+  margin-top:2px;
+}
+
+.live-badge{
+  background:#123524;
+  color:#67ff9a;
+
+  padding:6px 10px;
+
+  border-radius:999px;
+
+  font-size:.72rem;
+  font-weight:600;
+
+  animation:pulseBadge 2s infinite;
+}
+
+
+/* =====================================================
+   MAIN STATUS CARD
+===================================================== */
+
+.main-card{
+  background:
+    linear-gradient(
+      135deg,
+      #1e3a2f,
+      #1f5137
+    );
+
+  border-radius:24px;
+
+  padding:20px;
+
+  margin-bottom:18px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  z-index:2;
+
+  animation:cardGlow 4s ease-in-out infinite;
+}
+
+.main-card::before{
+  content:"";
+
+  position:absolute;
+
+  inset:0;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,.06),
+      transparent
+    );
+
+  transform:translateX(-100%);
+
+  animation:cardShimmer 4s infinite;
+}
+
+.main-label{
+  font-size:.82rem;
+  opacity:.8;
+  margin-bottom:8px;
+}
+
+.main-status{
+  font-size:2rem;
+  font-weight:800;
+  line-height:1;
+  margin-bottom:10px;
+
+  animation:textPulse 3s infinite;
+}
+
+.main-desc{
+  font-size:.9rem;
+  opacity:.85;
+  line-height:1.5;
+}
+
+
+/* =====================================================
+   SENSOR GRID
+===================================================== */
+
+.sensor-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+
+  position:relative;
+  z-index:2;
+}
+
+.sensor-card{
+  background:#1f2937;
+
+  border-radius:18px;
+
+  padding:14px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  transition:
+    transform .35s ease,
+    background .35s ease;
+}
+
+.sensor-card:hover{
+  transform:translateY(-4px) scale(1.03);
+  background:#243142;
+}
+
+.sensor-label{
+  font-size:.75rem;
+  opacity:.75;
+  margin-bottom:10px;
+}
+
+.sensor-val{
+  font-size:1.4rem;
+  font-weight:700;
+  margin-bottom:12px;
+}
+
+.sensor-unit{
+  font-size:.8rem;
+  opacity:.7;
+}
+
+.sensor-bar{
+  width:100%;
+  height:8px;
+
+  background:#374151;
+
+  border-radius:999px;
+
+  overflow:hidden;
+}
+
+.sensor-fill{
+  height:100%;
+
+  border-radius:999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #34d399,
+      #22c55e,
+      #6ee7b7
+    );
+
+  background-size:200% auto;
+
+  animation:
+    fillGlow 3s linear infinite,
+    sensorPulse 2s ease-in-out infinite;
+}
+
+
+/* =====================================================
+   ALERT BAR
+===================================================== */
+
+.alert-bar{
+  margin-top:18px;
+
+  background:#18222f;
+
+  border-radius:16px;
+
+  padding:12px;
+
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+
+  position:relative;
+  z-index:2;
+
+  animation:fadeAlert 4s ease-in-out infinite;
+}
+
+.alert-dot{
+  width:10px;
+  height:10px;
+
+  background:#22c55e;
+
+  border-radius:50%;
+
+  margin-top:5px;
+
+  animation:blinkDot 1.2s infinite;
+}
+
+.alert-text{
+  font-size:.82rem;
+  line-height:1.5;
+  opacity:.85;
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes floatPhone{
+
+  0%,100%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-10px);
+  }
+}
+
+@keyframes rotateGlow{
+
+  from{
+    transform:rotate(0deg);
+  }
+
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes shineSweep{
+
+  0%{
+    transform:translateX(-200%) rotate(18deg);
+  }
+
+  100%{
+    transform:translateX(500%) rotate(18deg);
+  }
+}
+
+@keyframes gradientMove{
+
+  0%{
+    background-position:0% center;
+  }
+
+  100%{
+    background-position:200% center;
+  }
+}
+
+@keyframes pulseBadge{
+
+  0%,100%{
+    box-shadow:0 0 0 rgba(34,197,94,0);
+  }
+
+  50%{
+    box-shadow:0 0 18px rgba(34,197,94,.55);
+  }
+}
+
+@keyframes cardGlow{
+
+  0%,100%{
+    box-shadow:0 0 0 rgba(34,197,94,0);
+  }
+
+  50%{
+    box-shadow:0 0 24px rgba(34,197,94,.18);
+  }
+}
+
+@keyframes cardShimmer{
+
+  100%{
+    transform:translateX(250%);
+  }
+}
+
+@keyframes textPulse{
+
+  0%,100%{
+    opacity:1;
+  }
+
+  50%{
+    opacity:.82;
+  }
+}
+
+@keyframes fillGlow{
+
+  0%{
+    background-position:0% center;
+  }
+
+  100%{
+    background-position:200% center;
+  }
+}
+
+@keyframes sensorPulse{
+
+  0%,100%{
+    opacity:1;
+  }
+
+  50%{
+    opacity:.75;
+  }
+}
+
+@keyframes blinkDot{
+
+  0%,100%{
+    opacity:1;
+    transform:scale(1);
+  }
+
+  50%{
+    opacity:.35;
+    transform:scale(.8);
+  }
+}
+
+@keyframes fadeAlert{
+
+  0%,100%{
+    transform:translateY(0px);
+  }
+
+  50%{
+    transform:translateY(-2px);
+  }
+}
+
+@keyframes glowPulse{
+
+  0%,100%{
+    transform:scale(1);
+    opacity:.7;
+  }
+
+  50%{
+    transform:scale(1.08);
+    opacity:1;
+  }
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:768px){
+
+  .mobile-mockup{
+    width:100%;
+    max-width:340px;
+    margin:auto;
+  }
+
+}
+
   </style>
 </head>
 
@@ -1239,89 +1868,181 @@
     </section>
 
     <!-- HOW IT WORKS -->
-    <section id="how-it-works" aria-labelledby="how-heading">
-      <div class="container">
-        <span class="section-tag">How It Works</span>
-        <h2 class="section-title" id="how-heading">From Ground to Phone<br>in 3 Simple Steps</h2>
-        <div class="how-grid">
-          <ol class="steps" aria-label="Steps to use Furrowa">
-            <li class="step">
-              <div class="step-num" aria-hidden="true">1</div>
-              <div class="step-body">
-                <h3 class="step-title">Plant the Device</h3>
-                <p class="step-desc">Place the sensor stake into your field. No wiring, no tools needed , take the measurement.</p>
-              </div>
-            </li>
-            <li class="step">
-              <div class="step-num" aria-hidden="true">2</div>
-              <div class="step-body">
-                <h3 class="step-title">Get a Clear Irrigation Decision</h3>
-                <p class="step-desc">Oriva continuously monitors soil moisture and analyzes conditions. You get simple
-                  alerts like "Irrigate today" or "Wait 3 days" — so you never overwater or underwater your crop.</p>
-              </div>
-            </li>
-            <li class="step">
-              <div class="step-num" aria-hidden="true">3</div>
-              <div class="step-body">
-                <h3 class="step-title">Act on Smart Recommendations</h3>
-                <p class="step-desc">Follow the alert, irrigate with confidence, and track your water use over the
-                  season — less waste, better yield, simpler farming.</p>
-              </div>
-            </li>
-            <li class="step">
-              <div class="step-num" aria-hidden="true">4</div>
-              <div class="step-body">
-                <h3 class="step-title">Watch Your Yield Grow</h3>
-                <p class="step-desc">Track your water use and field health season over season. Less overwatering,
-                  healthier crops, better outcomes — with data you can actually trust.</p>
-              </div>
-            </li>
-          </ol>
-          <div class="how-visual" aria-label="Live Furrowa device dashboard preview" role="img">
-            <div class="device-mockup">
-              <div class="device-header">
-                <span class="device-title">Field Dashboard</span>
-                <span class="device-badge">● Live</span>
-              </div>
-              <div class="sensor-grid">
-                <div class="sensor-card">
-                  <div class="sensor-label">Soil Moisture</div>
-                  <div class="sensor-val">62<span class="sensor-unit">%</span></div>
-                  <div class="sensor-bar">
-                    <div class="sensor-fill" style="width:62%"></div>
-                  </div>
-                </div>
-                <div class="sensor-card">
-                  <div class="sensor-label">Soil Temp</div>
-                  <div class="sensor-val">28<span class="sensor-unit">°C</span></div>
-                  <div class="sensor-bar">
-                    <div class="sensor-fill" style="width:56%"></div>
-                  </div>
-                </div>
-                <div class="sensor-card">
-                  <div class="sensor-label">Temperature</div>
-                  <div class="sensor-val">88<span class="sensor-unit">°C</span></div>
-                  <div class="sensor-bar">
-                    <div class="sensor-fill" style="width:44%"></div>
-                  </div>
-                </div>
-                <div class="sensor-card">
-                  <div class="sensor-label">Humidity</div>
-                  <div class="sensor-val">74<span class="sensor-unit">%</span></div>
-                  <div class="sensor-bar">
-                    <div class="sensor-fill" style="width:74%"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="alert-bar">
-                <div class="alert-dot" aria-hidden="true"></div>
-                <span class="alert-text">Irrigation recommended in Zone 2 — soil at 38%</span>
-              </div>
+<section id="how-it-works" aria-labelledby="how-heading">
+  <div class="container">
+    <span class="section-tag">How It Works</span>
+
+    <h2 class="section-title" id="how-heading">
+      From Soil to Smart Decisions<br>in 4 Simple Steps
+    </h2>
+
+    <div class="how-grid">
+
+      <!-- Steps -->
+      <ol class="steps" aria-label="Steps to use Oriva">
+
+        <li class="step">
+          <div class="step-num" aria-hidden="true">1</div>
+
+          <div class="step-body">
+            <h3 class="step-title">Place Oriva in Your Field</h3>
+
+            <p class="step-desc">
+              Insert the Oriva probe into the soil at root level. No wiring,
+              complicated setup, or internet connection required.
+            </p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-num" aria-hidden="true">2</div>
+
+          <div class="step-body">
+            <h3 class="step-title">Take a Reading</h3>
+
+            <p class="step-desc">
+              Oriva measures soil moisture, soil temperature, humidity,
+              and field conditions directly from your crop zone.
+            </p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-num" aria-hidden="true">3</div>
+
+          <div class="step-body">
+            <h3 class="step-title">Get Irrigation Advice</h3>
+
+            <p class="step-desc">
+              The app converts sensor data into clear recommendations like
+              “Irrigate Today” or “Wait 3 Days” — simple decisions without guesswork.
+            </p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step-num" aria-hidden="true">4</div>
+
+          <div class="step-body">
+            <h3 class="step-title">Save Water & Improve Yield</h3>
+
+            <p class="step-desc">
+              Avoid overwatering, reduce unnecessary irrigation,
+              and maintain healthier crop growth throughout the season.
+            </p>
+          </div>
+        </li>
+
+      </ol>
+
+      <!-- Mobile UI -->
+      <div class="how-visual"
+           aria-label="Oriva mobile app dashboard preview"
+           role="img">
+
+        <div class="mobile-mockup">
+
+          <!-- Phone Top -->
+          <div class="mobile-topbar">
+            <span class="mobile-time">9:41</span>
+
+            <div class="mobile-icons">
+              <span>📶</span>
+              <span>🔋</span>
             </div>
           </div>
+
+          <!-- App Header -->
+          <div class="app-header">
+            <div>
+              <div class="app-brand">ORIVA</div>
+              <div class="app-subtitle">Smart Irrigation Assistant</div>
+            </div>
+
+            <div class="live-badge">● Live</div>
+          </div>
+
+          <!-- Main Recommendation -->
+          <div class="main-card">
+            <div class="main-label">Today's Recommendation</div>
+
+            <div class="main-status">
+              Wait 3 Days
+            </div>
+
+            <div class="main-desc">
+              Soil moisture is currently sufficient for your crop zone.
+            </div>
+          </div>
+
+          <!-- Sensor Grid -->
+          <div class="sensor-grid">
+
+            <div class="sensor-card">
+              <div class="sensor-label">Soil Moisture</div>
+
+              <div class="sensor-val">
+                62<span class="sensor-unit">%</span>
+              </div>
+
+              <div class="sensor-bar">
+                <div class="sensor-fill" style="width:62%"></div>
+              </div>
+            </div>
+
+            <div class="sensor-card">
+              <div class="sensor-label">Soil Temp</div>
+
+              <div class="sensor-val">
+                28<span class="sensor-unit">°C</span>
+              </div>
+
+              <div class="sensor-bar">
+                <div class="sensor-fill" style="width:56%"></div>
+              </div>
+            </div>
+
+            <div class="sensor-card">
+              <div class="sensor-label">Humidity</div>
+
+              <div class="sensor-val">
+                74<span class="sensor-unit">%</span>
+              </div>
+
+              <div class="sensor-bar">
+                <div class="sensor-fill" style="width:74%"></div>
+              </div>
+            </div>
+
+            <div class="sensor-card">
+              <div class="sensor-label">Field Status</div>
+
+              <div class="sensor-val">
+                Good
+              </div>
+
+              <div class="sensor-bar">
+                <div class="sensor-fill" style="width:82%"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Alert -->
+          <div class="alert-bar">
+            <div class="alert-dot" aria-hidden="true"></div>
+
+            <span class="alert-text">
+              Water usage optimized this week — 18% less irrigation used
+            </span>
+          </div>
+
         </div>
       </div>
-    </section>
+
+    </div>
+  </div>
+</section>
 
 
     <!-- BLOG / INSIGHTS SECTION -->

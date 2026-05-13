@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pre-order Oriva | Smart Irrigation by Furrowa</title>
+  <meta name="description" content="Pre-order Oriva today. The smartest, most affordable soil moisture sensor built specifically for Indian farmers.">
+  <meta name="robots" content="noindex, nofollow"> <!-- Prevent indexing of the form directly -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="theme-color" content="#2D5A27">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --soil: #2C1810; --earth: #6B3D2A; --harvest: #C8841A; --harvest-light: #F5C842;
+      --leaf: #2D5A27; --leaf-light: #4A8C3F; --sky: #E8F4EC; --cream: #FBF7F0;
+      --text-dark: #1A1A1A; --text-mid: #4A4A4A; --text-muted: #888;
+    }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-dark); overflow-x: hidden; line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
+    
+    /* NAV */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(251, 247, 240, 0.93); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(107, 61, 42, 0.1); }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 5%; max-width: 1280px; margin: 0 auto; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; color: var(--leaf); text-decoration: none; }
+    .nav-logo span { color: var(--harvest); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: 0.9rem; color: var(--text-mid); font-weight: 500; transition: color 0.2s; padding: 4px 0; border-bottom: 2px solid transparent; }
+    .nav-links a:hover { color: var(--leaf); border-bottom-color: var(--leaf); }
+
+    /* PREORDER FORM */
+    .form-section { padding: 8rem 5% 6rem; flex-grow: 1; display: flex; align-items: center; justify-content: center; }
+    .form-container { background: white; max-width: 600px; width: 100%; padding: 3rem; border-radius: 24px; box-shadow: 0 15px 40px rgba(45, 90, 39, 0.08); border: 1px solid rgba(45, 90, 39, 0.1); }
+    
+    .form-header { text-align: center; margin-bottom: 2.5rem; }
+    .form-header h1 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--soil); margin-bottom: 0.5rem; }
+    .form-header p { color: var(--text-mid); font-size: 0.95rem; }
+
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label { display: block; font-weight: 500; margin-bottom: 0.5rem; color: var(--soil); font-size: 0.9rem; }
+    .form-group input, .form-group select { width: 100%; padding: 0.9rem 1rem; border: 2px solid rgba(45, 90, 39, 0.15); border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 1rem; color: var(--text-dark); transition: border-color 0.2s, box-shadow 0.2s; background: var(--cream); }
+    .form-group input:focus, .form-group select:focus { outline: none; border-color: var(--leaf); box-shadow: 0 0 0 4px rgba(45, 90, 39, 0.1); }
+    
+    .submit-btn { width: 100%; background: var(--leaf); color: white; padding: 1.1rem; border: none; border-radius: 12px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.2s; margin-top: 1rem; font-family: 'DM Sans', sans-serif; }
+    .submit-btn:hover { background: var(--leaf-light); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(45, 90, 39, 0.2); }
+    
+    .form-footer-note { text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 1.5rem; }
+
+    [data-fs-error] { color: #d32f2f; font-size: 0.85rem; margin-top: 4px; display: block; }
+    [data-fs-success] { background: #E8F4EC; color: var(--leaf); padding: 1rem; border-radius: 12px; margin-bottom: 1.5rem; text-align: center; font-weight: 500; display: none; }
+    [data-fs-success]:not(:empty) { display: block; }
+
+    /* FOOTER */
+    footer { background: #170E08; color: rgba(255, 255, 255, 0.5); padding: 3rem 5% 2rem; margin-top: auto; text-align: center; font-size: 0.85rem; }
+    footer a { color: var(--harvest); text-decoration: none; }
+    
+    @media (max-width: 600px) {
+      .form-container { padding: 2rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="nav-logo">Furrow<span>a</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#devices">Devices</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <div class="form-container">
+        <div class="form-header">
+          <h1>Pre-order Oriva</h1>
+          <p>Secure your smart irrigation system today. Fill out the form below and our team will contact you regarding delivery.</p>
+        </div>
+
+        <div data-fs-success></div>
+        <div data-fs-error></div>
+
+        <form id="my-form">
+          
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Ramesh Kumar" required data-fs-field>
+            <span data-fs-error="name"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Mobile Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91" required data-fs-field>
+            <span data-fs-error="phone"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="location">Village & State</label>
+            <input type="text" id="location" name="location" placeholder="Pune, Maharashtra" required data-fs-field>
+            <span data-fs-error="location"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="crop">Primary Crop</label>
+            <input type="text" id="crop" name="crop" placeholder="E.g., Sugarcane, Cotton, Grapes" required data-fs-field>
+            <span data-fs-error="crop"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="quantity">Number of Devices</label>
+            <select id="quantity" name="quantity" required data-fs-field>
+              <option value="1">1 Device (₹5,000)</option>
+              <option value="2">2 Devices (₹10,000)</option>
+              <option value="3">3 Devices (₹15,000)</option>
+              <option value="4+">4 or more Devices (Bulk Pricing)</option>
+            </select>
+            <span data-fs-error="quantity"></span>
+          </div>
+
+          <button type="submit" class="submit-btn" data-fs-submit-btn>Submit Pre-order</button>
+
+          <p class="form-footer-note">No payment is required right now. We will contact you to confirm the order and arrange shipping.</p>
+        </form>
+
+        <script>
+          window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+          formspree('initForm', { formElement: '#my-form', formId: 'xnjwrdew' });
+        </script>
+        <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Furrowa Agritech. <a href="index.html">Return to Home</a></p>
+  </footer>
+</body>
+</html>

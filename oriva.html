@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Oriva | Smart Irrigation Advisory System by Furrowa</title>
+  <meta name="description" content="Oriva by Furrowa is an intelligent irrigation system that monitors soil moisture in real time and tells farmers exactly when to irrigate. Designed to replace guesswork with simple, data-driven decisions.">
+  <meta name="keywords" content="Oriva, Furrowa, smart irrigation, soil moisture sensor, precision agriculture, agritech India, smart farming">
+  <link rel="canonical" href="https://www.furrowa.in/oriva.html">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="theme-color" content="#2D5A27">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --soil: #2C1810; --earth: #6B3D2A; --harvest: #C8841A; --harvest-light: #F5C842;
+      --leaf: #2D5A27; --leaf-light: #4A8C3F; --sky: #E8F4EC; --cream: #FBF7F0;
+      --text-dark: #1A1A1A; --text-mid: #4A4A4A; --text-muted: #888;
+    }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); color: var(--text-dark); overflow-x: hidden; line-height: 1.6; }
+    
+    /* NAV */
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(251, 247, 240, 0.93); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(107, 61, 42, 0.1); }
+    nav { display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 5%; max-width: 1280px; margin: 0 auto; }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; color: var(--leaf); text-decoration: none; }
+    .nav-logo span { color: var(--harvest); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { text-decoration: none; font-size: 0.9rem; color: var(--text-mid); font-weight: 500; transition: color 0.2s; padding: 4px 0; border-bottom: 2px solid transparent; }
+    .nav-links a:hover { color: var(--leaf); border-bottom-color: var(--leaf); }
+    .nav-cta { background: var(--leaf); color: white; padding: 0.6rem 1.5rem; border-radius: 50px; font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .nav-cta:hover { background: var(--leaf-light); transform: translateY(-1px); }
+
+    /* PRODUCT HERO */
+    .product-hero { padding: 10rem 5% 6rem; background: linear-gradient(155deg, #E8F4EC 0%, #FBF7F0 55%); min-height: 80vh; display: flex; align-items: center; }
+    .hero-container { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .hero-text h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 900; color: var(--soil); line-height: 1.1; margin-bottom: 1rem; }
+    .hero-text h1 span { color: var(--leaf); }
+    .hero-text p { font-size: 1.1rem; color: var(--text-mid); margin-bottom: 2rem; max-width: 500px; }
+    .price-tag { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 700; color: var(--leaf); margin-bottom: 2rem; display: flex; align-items: baseline; gap: 8px; }
+    .price-tag small { font-family: 'DM Sans', sans-serif; font-size: 1rem; color: var(--text-muted); font-weight: 400; text-decoration: line-through; }
+    
+    .btn-buy { background: var(--harvest); color: white; padding: 1rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; text-decoration: none; display: inline-flex; transition: all 0.2s; box-shadow: 0 4px 15px rgba(200, 132, 26, 0.3); }
+    .btn-buy:hover { background: var(--harvest-light); color: var(--soil); transform: translateY(-2px); box-shadow: 0 8px 25px rgba(200, 132, 26, 0.4); }
+
+    .hero-visual { position: relative; }
+    .device-showcase { background: white; border-radius: 24px; padding: 3rem; box-shadow: 0 20px 50px rgba(45, 90, 39, 0.1); border: 1px solid rgba(45, 90, 39, 0.1); text-align: center; }
+    .device-icon { font-size: 6rem; margin-bottom: 1rem; }
+    .device-name { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--soil); }
+
+    /* FEATURES */
+    .features-section { padding: 6rem 5%; background: white; }
+    .section-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--soil); margin-bottom: 3rem; }
+    .features-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .feature-card { background: var(--cream); border-radius: 20px; padding: 2.5rem; text-align: center; border: 1px solid rgba(107, 61, 42, 0.05); transition: transform 0.3s; }
+    .feature-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(45, 90, 39, 0.08); }
+    .feature-icon { font-size: 2.5rem; margin-bottom: 1.5rem; background: rgba(45, 90, 39, 0.1); width: 80px; height: 80px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: var(--leaf); }
+    .feature-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; color: var(--soil); margin-bottom: 1rem; }
+    .feature-card p { font-size: 0.95rem; color: var(--text-mid); }
+
+    /* TECH SPECS */
+    .specs-section { padding: 6rem 5%; background: var(--soil); color: white; }
+    .specs-title { text-align: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--harvest-light); margin-bottom: 3rem; }
+    .specs-grid { max-width: 800px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+    .spec-item { border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 1rem; }
+    .spec-label { font-size: 0.85rem; color: rgba(255, 255, 255, 0.6); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; }
+    .spec-value { font-size: 1.1rem; font-weight: 500; }
+
+    /* FOOTER */
+    footer { background: #170E08; color: rgba(255, 255, 255, 0.5); padding: 4rem 5% 2.5rem; margin-top: auto; }
+    .footer-grid { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: white; font-weight: 700; text-decoration: none; display: block; margin-bottom: 1rem; }
+    .footer-brand .footer-logo span { color: var(--harvest); }
+    .footer-brand p { font-size: 0.85rem; line-height: 1.7; max-width: 280px; }
+    .footer-col h3 { font-size: 0.8rem; font-weight: 500; letter-spacing: 1px; text-transform: uppercase; color: rgba(255, 255, 255, 0.4); margin-bottom: 1rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .footer-col ul a { text-decoration: none; color: rgba(255, 255, 255, 0.5); font-size: 0.85rem; transition: color 0.2s; }
+    .footer-col ul a:hover { color: white; }
+    .footer-bottom { max-width: 1280px; margin: 0 auto; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-size: 0.8rem; }
+    
+    @media (max-width: 900px) {
+      .hero-container { grid-template-columns: 1fr; text-align: center; }
+      .hero-text p { margin: 0 auto 2rem; }
+      .price-tag { justify-content: center; }
+      .features-grid { grid-template-columns: 1fr; }
+      .specs-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="nav-logo">Furrow<span>a</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html#devices">Devices</a></li>
+        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+      </ul>
+      <a href="#pre-order" class="nav-cta">Pre-order Oriva</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Meet <span>Oriva</span></h1>
+          <p>An intelligent, portable irrigation advisory system delivering real-time soil insights and predictive recommendations.</p>
+          <div class="price-tag">₹5,000</div>
+          <a href="#pre-order" class="btn-buy">Pre-order Now</a>
+        </div>
+        <div class="hero-visual">
+          <div class="device-showcase">
+            <div class="device-icon">🌱</div>
+            <div class="device-name">Oriva Smart Sensor</div>
+            <p style="margin-top: 1rem; color: var(--text-mid);">FRW-ORIVA-001</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <h2 class="section-title">Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📏</div>
+          <h3>Multi-depth Soil Probe</h3>
+          <p>Measures moisture at multiple depths in one insertion, tailored to the crop’s specific root zone.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🧠</div>
+          <h3>Hybrid Predictive System</h3>
+          <p>Combines calibrated soil moisture sensing, multi-day weather forecasting, and soil water balance simulation.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Actionable Recommendations</h3>
+          <p>Clear actionable irrigation recommendations delivered directly via the Furrowa mobile app.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📡</div>
+          <h3>No SIM Card Required</h3>
+          <p>Works entirely via Bluetooth, saving you subscription costs and relying on seamless local connectivity.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🗣️</div>
+          <h3>12 Indian Languages</h3>
+          <p>Supports 12 major Indian languages to make smart irrigation accessible to every farmer.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔋</div>
+          <h3>Portable & Rechargeable</h3>
+          <p>Portable design with a built-in rechargeable battery. Carry it, measure, and charge when needed.</p>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">Furrow<span>a</span></a>
+        <p>Making precision agritech affordable for every Indian farmer. Oriva is our first step.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="oriva.html">Oriva</a></li>
+          <li><a href="index.html#app">Furrowa App</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="index.html#blog">Farming Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Help Centre</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2026 Furrowa Agritech</p>
+      <div class="footer-legal">
+        <a href="#" style="color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.8rem;">Privacy Policy</a>
+        <a href="#" style="color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.8rem;">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
